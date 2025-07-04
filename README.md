@@ -100,39 +100,38 @@ Pancollection
     └── ...
 ```
 
-<!-- ## 🚀 Get Started
-### Nvidia Dataset
+## 🚀 Get Started
 #### Training
-```sh
+<!-- ```sh
 # check if environment is activated properly
 conda activate splinegs
 
 python train.py -s data/nvidia_rodynrf/${SCENE}/ --expname "${EXP_NAME}" --configs arguments/nvidia_rodynrf/${SCENE}.py
-```
-#### Metrics Evaluation
+``` -->
+TBA ...
+<!-- #### Metrics Evaluation
 ```sh
 python eval_nvidia.py -s data/nvidia_rodynrf/${SCENE}/ --expname "${EXP_NAME}" --configs arguments/nvidia_rodynrf/${SCENE}.py --checkpoint output/${EXP_NAME}/point_cloud/fine_best
-```
-### YOUR OWN Dataset
-#### Training
-T.B.D
+``` -->
+<!-- #### Training
+T.B.D -->
 #### Evaluation
-T.B.D
+TBA ...
 
 ## Acknowledgments
-- This work was supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korean Government [Ministry of Science and ICT (Information and Communications Technology)] (Project Number: RS-2022-00144444, Project Title: Deep Learning Based Visual Representational Learning and Rendering of Static and Dynamic Scenes, 100%).
+This work was supported by National Research Foundation of Korea (NRF) grant funded by the Korean Government
+[Ministry of Science and ICT (Information and Communications Technology)] (Project Number: RS- 2024-00338513, Project Title: AI-based Computer Vision Study for Satellite Image Processing and Analysis, 100%).
 
-## ⭐ Citing SplineGS
+## ⭐ Citing U-Know-DiffPAN
 
 If you find our repository useful, please consider giving it a star ⭐ and citing our research papers in your work:
 ```bibtex
-@InProceedings{Park_2025_CVPR,
-    author    = {Park, Jongmin and Bui, Minh-Quan Viet and Bello, Juan Luis Gonzalez and Moon, Jaeho and Oh, Jihyong and Kim, Munchurl},
-    title     = {SplineGS: Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video},
-    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
-    month     = {June},
-    year      = {2025},
-    pages     = {26866-26875}
+@inproceedings{kim2025u,
+  title={U-Know-DiffPAN: An Uncertainty-aware Knowledge Distillation Diffusion Framework with Details Enhancement for PAN-Sharpening},
+  author={Kim, Sungpyo and Do, Jeonghyeok and Lee, Jaehyup and Kim, Munchurl},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={23069--23079},
+  year={2025}
 }
-``` -->
+```
 

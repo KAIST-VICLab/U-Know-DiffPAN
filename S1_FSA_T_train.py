@@ -372,7 +372,3 @@ def train_FSA_T(cfg):
         )
         epochs += 1
     writer.close()
-
-if __name__ == "__main__":
-    import os
-    from datetime import datetime

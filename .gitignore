@@ -1,3 +1,5 @@
+# Ignore all __pycache__ folders
+**/__pycache__/
+
 ./logs
 ./runs
-README.md

@@ -102,6 +102,7 @@ Pancollection
 
 ## 🚀 Get Started
 ## Training
+Before starting training, make sure to modify the configuration files (Prior_config.py, FSA_T_config.py, FSA_S_config.py) to match your local environment (e.g., dataset paths, checkpoint directories, device settings, etc.).
 ```sh
 # check if environment is activated properly
 conda activate uknow

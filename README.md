@@ -142,7 +142,7 @@ Pancollection
 # FSA-S Train
 python main.py --stage FSA_S --mode train
 ```
-###  Test
+##  Test
 ```sh
 # FSA-S Test
 python main.py --stage FSA_S --mode test

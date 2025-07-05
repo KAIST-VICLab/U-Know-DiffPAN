@@ -2,7 +2,7 @@
 Framework with Details Enhancement for PAN-Sharpening </h2></div>
 <br>
 
-**[Sungpyo Kim](https://sites.google.com/view/jongmin-park)<sup>1</sup>, [Jeonghyeok Do](https://quan5609.github.io/)<sup>1</sup>, [Jaehyup Lee](https://cmlab.cau.ac.kr/)<sup>2†</sup>, [Munchurl Kim](https://www.viclab.kaist.ac.kr/)<sup>1†</sup>** 
+**[Sungpyo Kim](https://www.viclab.kaist.ac.kr/)<sup>1</sup>, [Jeonghyeok Do](https://sites.google.com/view/jeonghyeokdo)<sup>1</sup>, [Jaehyup Lee](https://sites.google.com/view/knuairlab/)<sup>2†</sup>, [Munchurl Kim](https://www.viclab.kaist.ac.kr/)<sup>1†</sup>** 
 <br>
 <sup>1</sup>KAIST, South Korea, <sup>2</sup>Kyungpook National University, South Korea
 <br>
@@ -152,7 +152,7 @@ python eval_nvidia.py -s data/nvidia_rodynrf/${SCENE}/ --expname "${EXP_NAME}" -
 ``` -->
 <!-- #### Training
 T.B.D -->
-#### Evaluation
+### Evaluation
 TBA ...
 
 ## Acknowledgments

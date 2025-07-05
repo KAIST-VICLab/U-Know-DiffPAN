@@ -25,7 +25,7 @@ from tqdm import tqdm
 
 
 def train_FSA_S(cfg):
-        # dataset
+    # dataset
     train_dataset_path = cfg.train_dataset_path
     valid_dataset_path = cfg.valid_dataset_path
     dataset_name = cfg.dataset_name
@@ -296,7 +296,6 @@ def train_FSA_S(cfg):
                         stack_output = einops.rearrange(sr, 'b c h w -> c (b h) w')
                         stack_gt= einops.rearrange(gt, 'b c h w -> c (b h) w')
                         stack_gt_minus_out = einops.rearrange(gt-sr, 'b c h w -> c (b h) w')
-                        compareset_img = torch.concat([stack_gt, stack_output, stack_lms, stack_pan, stack_gt_minus_out], dim = 2)
 
                         if dataset_name == 'gf2':
                             img_scale = 2**10-1
@@ -335,13 +334,11 @@ def train_FSA_S(cfg):
                 # diffusion save
                 torch.save(
                     ema_updater.on_fly_model_state_dict,
-                    # f"./weights/diffusion_{dataset_name}_iter_{iterations}.pth",
                     f"{save_dir}/diffusion_{dataset_name}_iter_{iterations}.pth",
                 )
                 # ema save
                 torch.save(
                     ema_updater.ema_model_state_dict,
-                    # f"./weights/ema_diffusion_{dataset_name}_iter_{iterations}.pth",
                     f"{save_dir}/ema_diffusion_{dataset_name}_iter_{iterations}.pth",
                 )
                 # prenetwork save
@@ -362,7 +359,3 @@ def train_FSA_S(cfg):
         )
         epochs += 1
     writer.close()
-
-if __name__ == "__main__":
-    import os
-    from datetime import datetime

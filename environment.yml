@@ -1,4 +1,4 @@
-name: U_know
+name: uknow
 channels:
   - pytorch
   - defaults
@@ -294,4 +294,4 @@ dependencies:
       - wandb==0.18.6
       - yacs==0.1.8
       - yapf==0.43.0
-prefix: /home/ksp/anaconda3/envs/swin
+# prefix: /home/ksp/anaconda3/envs/uknow

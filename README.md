@@ -101,14 +101,51 @@ Pancollection
 ```
 
 ## 🚀 Get Started
-#### Training
-<!-- ```sh
+## Training
+```sh
 # check if environment is activated properly
-conda activate splinegs
+conda activate uknow
+```
+### Priornet pretrain
+```sh
+python main.py --stage Priornet --mode train
+```
+### Stage 1
+```sh
+# FSA-T Pretrain
+python main.py --stage FSA_T --mode train
 
-python train.py -s data/nvidia_rodynrf/${SCENE}/ --expname "${EXP_NAME}" --configs arguments/nvidia_rodynrf/${SCENE}.py
-``` -->
-TBA ...
+# Get FSA-T output from train datasets  
+python main.py --stage FSA_T --mode save
+```
+
+After getting the .h5 format FSA-T output (dist_feature_map), arrange datasetes as follows:
+```bash
+Pancollection
+    ├── training_data
+    │   └── ...
+    │
+    ├── test_data
+    │   └── ...
+    │
+    ├── dist_feature_map
+    │   ├── train_wv3.h5
+    │   ├── train_qb.h5
+    │   └── train_gf2.h5
+    │
+    └── ...
+```
+
+### Stage 2
+```sh
+# FSA-S Train
+python main.py --stage FSA_S --mode train
+```
+###  Test
+```sh
+# FSA-S Test
+python main.py --stage FSA_S --mode test
+```
 <!-- #### Metrics Evaluation
 ```sh
 python eval_nvidia.py -s data/nvidia_rodynrf/${SCENE}/ --expname "${EXP_NAME}" --configs arguments/nvidia_rodynrf/${SCENE}.py --checkpoint output/${EXP_NAME}/point_cloud/fine_best

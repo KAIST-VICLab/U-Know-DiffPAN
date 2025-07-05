@@ -36,4 +36,3 @@ class TrainConfig(CommonConfig):
 
         # seed
         self.seed = 2025
-

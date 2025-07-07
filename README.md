@@ -46,44 +46,6 @@ conda activate uknow
 
 pip install -r requirements.txt
 ```
-<!-- # install splinegs environment
-conda create -n splinegs python=3.7 
-conda activate splinegs
-export CUDA_HOME=$CONDA_PREFIX
-export LD_LIBRARY_PATH=$CONDA_PREFIX/lib
-
-conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
-conda install nvidia/label/cuda-11.7.0::cuda
-conda install nvidia/label/cuda-11.7.0::cuda-nvcc
-conda install nvidia/label/cuda-11.7.0::cuda-runtime
-conda install nvidia/label/cuda-11.7.0::cuda-cudart
-
-
-pip install -e submodules/simple-knn
-pip install -e submodules/co-tracker
-pip install -r requirements.txt
-
-# install depth environment
-conda deactivate
-conda create -n unidepth_splinegs python=3.10
-conda activate unidepth_splinegs
-
-pip install -r requirements_unidepth.txt
-conda install -c conda-forge ld_impl_linux-64
-export CUDA_HOME=$CONDA_PREFIX
-export LD_LIBRARY_PATH=$CONDA_PREFIX/lib
-conda install nvidia/label/cuda-12.1.0::cuda
-conda install nvidia/label/cuda-12.1.0::cuda-nvcc
-conda install nvidia/label/cuda-12.1.0::cuda-runtime
-conda install nvidia/label/cuda-12.1.0::cuda-cudart
-conda install nvidia/label/cuda-12.1.0::libcusparse
-conda install nvidia/label/cuda-12.1.0::libcublas
-cd submodules/UniDepth/unidepth/ops/knn;bash compile.sh;cd ../../../../../
-cd submodules/UniDepth/unidepth/ops/extract_patches;bash compile.sh;cd ../../../../../
-
-pip install -e submodules/UniDepth
-mkdir -p submodules/mega-sam/Depth-Anything/checkpoints -->
-
 
 ## 📁 Data Preparations
 ### Pancollection Dataset

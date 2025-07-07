@@ -41,7 +41,10 @@ Clone the repo and install dependencies:
 git clone https://github.com/KAIST-VICLab/U-Know-DiffPAN.git
 cd U-Know-DiffPAN
 
-TBA ...
+conda create -n uknow python=3.8
+conda activate uknow
+
+pip install -r requirements.txt
 ```
 <!-- # install splinegs environment
 conda create -n splinegs python=3.7 

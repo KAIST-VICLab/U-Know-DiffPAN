@@ -177,12 +177,3 @@ def FSA_S_test(cfg):
         d
     )
     print(f"save result.... ")
-
-if __name__ == "__main__":
-    import os
-    from datetime import datetime
-
-    # Get the current date and time
-    now = datetime.now()
-    # Format the date and time as mm_dd_hh_mm
-    formatted_time = now.strftime("%m_%d")

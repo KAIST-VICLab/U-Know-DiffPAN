@@ -132,12 +132,13 @@ This work was supported by National Research Foundation of Korea (NRF) grant fun
 
 If you find our repository useful, please consider giving it a star ⭐ and citing our research papers in your work:
 ```bibtex
-@inproceedings{kim2025u,
-  title={U-Know-DiffPAN: An Uncertainty-aware Knowledge Distillation Diffusion Framework with Details Enhancement for PAN-Sharpening},
+@inproceedings{kim2025uknowdiffpan,
+  title={U-Know-DiffPAN: An uncertainty-aware knowledge distillation diffusion framework with details enhancement for PAN-sharpening},
   author={Kim, Sungpyo and Do, Jeonghyeok and Lee, Jaehyup and Kim, Munchurl},
-  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  booktitle={2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   pages={23069--23079},
-  year={2025}
+  year={2025},
+  organization={IEEE}
 }
 ```
 
